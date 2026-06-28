@@ -1,0 +1,6 @@
+{
+  "name": "BusinessFlow ERP",
+  "description": "An enterprise-grade, multi-tenant cloud ERP platform designed for vocational training centers, beauty schools, salons, and modern businesses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
