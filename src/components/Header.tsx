@@ -120,6 +120,7 @@ export default function Header({ onOpenCommandPalette }: HeaderProps) {
         {activeBranch ? (
           <div className="relative">
             <button
+              id="tour-branch-selector"
               onClick={() => setIsBranchDropdownOpen(!isBranchDropdownOpen)}
               className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-zinc-700 dark:text-zinc-300 bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl hover:bg-zinc-100 dark:hover:bg-zinc-800/80 transition-all cursor-pointer"
             >
@@ -167,6 +168,7 @@ export default function Header({ onOpenCommandPalette }: HeaderProps) {
         
         {/* Command Search Bar Trigger */}
         <button
+          id="tour-command-palette"
           onClick={onOpenCommandPalette}
           className="hidden md:flex items-center gap-2 px-3 py-1.5 w-52 text-left bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl text-xs text-zinc-400 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all cursor-pointer"
         >
@@ -180,6 +182,7 @@ export default function Header({ onOpenCommandPalette }: HeaderProps) {
         {/* Dynamic User Switcher Tool (Highlighting permissions) */}
         <div className="relative">
           <button
+            id="tour-role-switcher"
             onClick={() => setIsUserSwitcherOpen(!isUserSwitcherOpen)}
             className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-zinc-700 dark:text-zinc-300 bg-emerald-50/80 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-900/40 rounded-xl hover:bg-emerald-100/60 dark:hover:bg-emerald-950/40 transition-all cursor-pointer"
           >

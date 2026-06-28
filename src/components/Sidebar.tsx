@@ -113,6 +113,7 @@ export default function Sidebar({ currentModule, setModule, onOpenOrgModal }: Si
         {/* Brand/Organization Switcher */}
         <div className="relative p-4 border-b border-zinc-100 dark:border-zinc-900">
           <button
+            id="tour-brand-switcher"
             onClick={() => setIsTenantDropdownOpen(!isTenantDropdownOpen)}
             className="w-full flex items-center justify-between gap-2.5 p-2 rounded-xl border border-zinc-200 dark:border-zinc-800/80 hover:bg-zinc-50 dark:hover:bg-zinc-900/40 text-left transition-all cursor-pointer"
           >
@@ -181,7 +182,7 @@ export default function Sidebar({ currentModule, setModule, onOpenOrgModal }: Si
         </div>
 
         {/* Sidebar Nav items */}
-        <div className="flex-grow overflow-y-auto px-3 py-4 space-y-1">
+        <div id="tour-nav-list" className="flex-grow overflow-y-auto px-3 py-4 space-y-1">
           <p className="px-3 mb-2 text-[10px] font-semibold text-zinc-400 dark:text-zinc-500 tracking-wider uppercase">
             Platform Modules
           </p>
